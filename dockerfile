@@ -1,11 +1,12 @@
-FROM ubuntu:latest
+FROM ubuntu:24.04
 
 WORKDIR /app
 
 RUN mkdir -p /var/www/my-site
-COPY main.html /var/www/my-site/index.html
-COPY style.css /var/www/my-site/style.css
-COPY assets /var/www/my-site/assets
+COPY ./pages /var/www/my-site/pages
+COPY ./styles /var/www/my-site/styles
+COPY ./scripts /var/www/my-site/scripts
+COPY ./assets /var/www/my-site/assets
 
 COPY nginx.conf /etc/nginx/sites-available/my-site
 
