@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects – Maria Hamrol</title>
+    <link rel="stylesheet" type="text/css" href="../styles/pagestyle.css">
+    <script src="../scripts/projects.js" defer></script>
+</head>
+<body>
+    <header class="proj-header">
+        <a class="back-link" href="main.html">&#8592; Back</a>
+        <div class="proj-header-text">
+            <p class="proj-header-label">PORTFOLIO</p>
+            <h1 class="proj-header-title">Projects</h1>
+        </div>
+    </header>
+
+    <main class="projects-grid" id="projects-grid">
+        <!-- Cards rendered by projects.js -->
+    </main>
+
+    <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+        <div class="proj-modal-panel" role="dialog" aria-modal="true" aria-labelledby="proj-modal-title">
+            <button class="modal-close" onclick="closeProject()" aria-label="Close">&times;</button>
+            <img class="proj-modal-img" id="proj-modal-img" src="" alt="">
+            <div class="proj-modal-body">
+                <h2 class="proj-modal-title" id="proj-modal-title"></h2>
+                <p class="proj-modal-desc" id="proj-modal-desc"></p>
+                <div class="proj-modal-tech" id="proj-modal-tech"></div>
+                <a class="proj-modal-link" id="proj-modal-link" href="#" target="_blank" rel="noopener noreferrer">View on GitHub &#8594;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
